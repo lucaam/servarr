@@ -2,6 +2,53 @@ apiVersion: v1
 entries:
   servarr:
   - apiVersion: v2
+    appVersion: 1.0.3
+    created: "2024-04-24T19:21:30.99277296Z"
+    dependencies:
+    - name: sonarr
+      repository: https://charts.truecharts.org
+      version: 21.2.1
+    - name: radarr
+      repository: https://charts.truecharts.org
+      version: 21.2.1
+    - name: prowlarr
+      repository: https://charts.truecharts.org
+      version: 16.2.1
+    - name: qbittorrent
+      repository: https://charts.truecharts.org
+      version: 19.4.1
+    - name: jellyseerr
+      repository: https://charts.truecharts.org
+      version: 9.5.2
+    - name: jellyfin
+      repository: https://charts.truecharts.org
+      version: 18.7.7
+    - name: flaresolverr
+      repository: https://charts.truecharts.org
+      version: 13.4.1
+    description: Servarr complete Helm Chart for Kubernetes
+    digest: a6a462150b03a416b893306ccf19a4384b2da321ccab65434d9f09f54d1556aa
+    home: https://github.com/fonzdm/servarr
+    keywords:
+    - servarr
+    - prowlarr
+    - radarr
+    - sonarr
+    - qbittorrent
+    - jellyseerr
+    - jellyfin
+    - flaresolverr
+    maintainers:
+    - email: adm220297@proton.me
+      name: Alfonso De Masi
+    name: servarr
+    sources:
+    - https://github.com/fonzdm/servarr
+    type: application
+    urls:
+    - https://github.com/lucaam/servarr/releases/download/servarr-1.0.3/servarr-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
     appVersion: 1.0.2
     created: "2024-04-24T19:05:59.775718054Z"
     dependencies:
@@ -142,4 +189,4 @@ entries:
     urls:
     - https://github.com/lucaam/servarr/releases/download/servarr-1.0.0/servarr-1.0.0.tgz
     version: 1.0.0
-generated: "2024-04-24T19:05:59.775732941Z"
+generated: "2024-04-24T19:21:30.992787728Z"
