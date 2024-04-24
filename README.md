@@ -21,12 +21,11 @@ These instructions will get you a copy of the project up and running on your loc
 $ git clone https://github.com/fonzdm/servarr.git && cd servarr
 ```
 
-2. Do your magic by updating/adding files 😎
-3. Prepare your [`values.yaml`](#values)
-4. Try it in your cluster to check that everything is fine (replace the dot with the `servarr` folder if you workdir is different):
+2. Prepare your [`values.yaml`](#values)
+3. Try it in your cluster to check that everything is fine (replace the `servarr/servarr-chart` with the chart folder if your workdir is different):
 
 ```shell
-$ helm install servarr-dev . \
+$ helm install servarr-dev servarr/servarr-chart \
 --namespace servarr-dev \
 --create-namespace \
 --values values.yaml
@@ -45,12 +44,7 @@ $ helm install <release-name> <servarr-chart> \
 
 ### Values
 
-| **Parameter** | **Optional** | **Description** | **Default Value** | **Example Value** |
-|---------------|--------------|-----------------|-------------------|-------------------|
-| `global.apikey` | Required | Define a common API key that will be used to automate the entire integration. | `None` | `6d9df216-cac6-4f4a-9b25-5462026ce7be` |
-| `global.storageClassName` | Required | Cluster storage class to be used for the volume creation. | `None` | `longhorn` |
-
-<!-- Table init with some values just to give the idea on how it will be. A lot of values (almost all of them) are missing and MUST be filled in the table. -->
+Please read [Helm Chart README.md](./servarr/servarr-chartREADME.md) for details on how to configure the values needed for this chart.
 
 ## Contributing
 
@@ -58,15 +52,15 @@ Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on our code of cond
 
 ## Contributors
 
-<a href="https://github.com/fonzdm/servarr/graphs/contributors">
+<a href="https://github.com/fonzdm/servarr/servarr-chartgraphs/contributors">
   <img src="https://contrib.rocks/image?repo=fonzdm/servarr" />
 </a>
 
-See the full list of [contributors](https://github.com/fonzdm/servarr/contributors) who participated in this project.
+See the full list of [contributors](https://github.com/fonzdm/servarr/servarr-chartcontributors) who participated in this project.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [releases on this repository](https://github.com/fonzdm/servarr/releases). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [releases on this repository](https://github.com/fonzdm/servarr/servarr-chartreleases).
 
 ###### Keep in mind that each dependency has its own author and their contributors. Please, reach them out on their repositories.
 
